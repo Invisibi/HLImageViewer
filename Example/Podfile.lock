@@ -1,0 +1,63 @@
+PODS:
+  - HLImageViewer (0.1.0):
+    - libextobjc
+    - SDWebImage
+    - SDWebImage-ProgressView
+  - Kiwi (2.3.1)
+  - libextobjc (0.4.1):
+    - libextobjc/EXTADT (= 0.4.1)
+    - libextobjc/EXTConcreteProtocol (= 0.4.1)
+    - libextobjc/EXTKeyPathCoding (= 0.4.1)
+    - libextobjc/EXTNil (= 0.4.1)
+    - libextobjc/EXTSafeCategory (= 0.4.1)
+    - libextobjc/EXTScope (= 0.4.1)
+    - libextobjc/EXTSelectorChecking (= 0.4.1)
+    - libextobjc/EXTSynthesize (= 0.4.1)
+    - libextobjc/NSInvocation+EXT (= 0.4.1)
+    - libextobjc/NSMethodSignature+EXT (= 0.4.1)
+    - libextobjc/RuntimeExtensions (= 0.4.1)
+    - libextobjc/UmbrellaHeader (= 0.4.1)
+  - libextobjc/EXTADT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTConcreteProtocol (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTNil (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSafeCategory (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSelectorChecking (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSynthesize (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSInvocation+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/NSMethodSignature+EXT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - libextobjc/UmbrellaHeader (0.4.1)
+  - SDWebImage (3.7.2):
+    - SDWebImage/Core (= 3.7.2)
+  - SDWebImage-ProgressView (0.4.0):
+    - SDWebImage (~> 3.7.0)
+  - SDWebImage/Core (3.7.2)
+
+DEPENDENCIES:
+  - HLImageViewer (from `../`)
+  - Kiwi
+
+EXTERNAL SOURCES:
+  HLImageViewer:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HLImageViewer: 8cef9234a6a1cfaf6f63491be9c8ef6dc9dad1e1
+  Kiwi: f038a6c61f7a9e4d7766bff5717aa3b3fdb75f55
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
+  SDWebImage-ProgressView: cdc29091ec0d53fd6dab3df65039a4f308e0a5ae
+
+COCOAPODS: 0.36.0.rc.1

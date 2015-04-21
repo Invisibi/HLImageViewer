@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'HLImageViewer', :exclusive => true do
+  pod "HLImageViewer", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "HLImageViewer", :path => "../"
+
+  pod 'Kiwi'
+end
