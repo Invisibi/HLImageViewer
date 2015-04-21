@@ -23,6 +23,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6B25C09B570350379508F315 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C6B12F334CF83976758AD6E /* libPods-Tests.a */; };
+		94963D9D264E5CE4DE677826 /* lion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9496309A254A9EFCCC9B2B53 /* lion.jpg */; };
 		BEA5BB7E0489AB51DE1016AA /* libPods-HLImageViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB59C00FA425B2A08FA8E67E /* libPods-HLImageViewer.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		7C6B12F334CF83976758AD6E /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F55EA3F4E409C2DC08591E /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9496309A254A9EFCCC9B2B53 /* lion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lion.jpg; sourceTree = "<group>"; };
 		AB59C00FA425B2A08FA8E67E /* libPods-HLImageViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HLImageViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35F23ED07F9E2986F96C856 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB3DB941B11D2721685730D2 /* Pods-HLImageViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLImageViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-HLImageViewer/Pods-HLImageViewer.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* HLImageViewer-Prefix.pch */,
+				9496309A254A9EFCCC9B2B53 /* lion.jpg */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				94963D9D264E5CE4DE677826 /* lion.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

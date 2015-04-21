@@ -25,4 +25,12 @@
     [super didReceiveMemoryWarning];
 }
 
+- (IBAction)showImageViewer {
+    HLImageViewerController *imageViewerController = [[HLImageViewerController alloc] init];
+    NSString *imagePath = [[NSBundle mainBundle] pathForResource:@"lion" ofType:@"jpg"];
+    [imageViewerController setImageURL:[NSURL fileURLWithPath:imagePath]];
+
+    [self presentViewController:imageViewerController animated:YES completion:nil];
+}
+
 @end
