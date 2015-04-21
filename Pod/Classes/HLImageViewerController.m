@@ -33,6 +33,7 @@
     [self.view addSubview:scrollView];
     self.scrollView = scrollView;
     [self.view sendSubviewToBack:self.scrollView];
+    self.view.backgroundColor = [UIColor blackColor];
 
     NSLog(@"View image at %@", self.imageURL);
 
