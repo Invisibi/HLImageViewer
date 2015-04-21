@@ -88,14 +88,23 @@
     [self addSubview:_zoomView];
 
     @weakify(self);
-    
-    [self.zoomView sd_setImageWithURL:imageURL placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+    void (^resizeZoomViewFrame)(UIImage *) = ^void(UIImage *image) {
         @strongify(self);
         CGRect frame = self.zoomView.frame;
         frame.size = image.size;
         self.zoomView.frame = frame;
         [self configureForImageSize:image.size];
-    }            usingProgressView:nil];
+    };
+
+    if ([imageURL isFileURL]) {
+        UIImage *image = [UIImage imageWithContentsOfFile:imageURL.path];
+        self.zoomView.image = image;
+        resizeZoomViewFrame(image);
+    } else {
+        [self.zoomView sd_setImageWithURL:imageURL placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            resizeZoomViewFrame(image);
+        } usingProgressView:nil];
+    }
 }
 
 - (void)layoutSubviews
