@@ -16,6 +16,7 @@
 @property (nonatomic) NSURL *imageURL;
 @property (weak, nonatomic) id<HLModalViewControllerDelegate> delegate;
 @property (weak, nonatomic) HLImageScrollView *scrollView;
+@property (nonatomic) UIImageView *zoomView;
 
 - (IBAction)close:(id)sender;
 

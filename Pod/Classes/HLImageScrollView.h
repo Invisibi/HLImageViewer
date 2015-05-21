@@ -50,5 +50,6 @@
 @interface HLImageScrollView : UIScrollView
 
 @property (nonatomic) NSURL *imageURL;
+@property (nonatomic, readonly) UIImageView *zoomView;
 
 @end
