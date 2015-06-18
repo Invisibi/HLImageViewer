@@ -72,21 +72,14 @@
         self.bouncesZoom = YES;
         self.decelerationRate = UIScrollViewDecelerationRateFast;
         self.delegate = self;
+        self.zoomView = [[UIImageView alloc] initWithFrame:self.bounds];
+        [self addSubview:_zoomView];
     }
     return self;
 }
 
-- (void)setImageURL:(NSURL *)imageURL
+- (void)imageURL:(NSURL *)imageURL completion:(void (^)())completion
 {
-    _imageURL = imageURL;
-    [self.zoomView removeFromSuperview];
-    self.zoomView = nil;
-
-    self.zoomScale = 1.0;
-
-    self.zoomView = [[UIImageView alloc] initWithFrame:self.bounds];
-    [self addSubview:_zoomView];
-
     @weakify(self);
     void (^resizeZoomViewFrame)(UIImage *) = ^void(UIImage *image) {
         @strongify(self);
@@ -103,6 +96,9 @@
     } else {
         [self.zoomView sd_setImageWithURL:imageURL placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
             resizeZoomViewFrame(image);
+            if (completion) {
+                completion();
+            }
         } usingProgressView:nil];
     }
 }

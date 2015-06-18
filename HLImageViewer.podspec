@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "HLImageViewer"
-  s.version          = "0.1.1"
+  s.version          = "0.2.0"
   s.summary          = "A short description of HLImageViewer."
   s.description      = <<-DESC
                        An optional longer description of HLImageViewer

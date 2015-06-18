@@ -37,7 +37,6 @@
 
     NSLog(@"View image at %@", self.imageURL);
 
-    [self.scrollView setImageURL:self.imageURL];
     self.zoomView = self.scrollView.zoomView;
 }
 
