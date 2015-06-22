@@ -58,6 +58,7 @@
 }
 
 @property (nonatomic) UIImageView *zoomView;
+@property (nonatomic) BOOL imageLoaded;
 
 @end
 
@@ -78,6 +79,7 @@
 
 - (void)setImageURL:(NSURL *)imageURL
 {
+    self.imageLoaded = NO;
     _imageURL = imageURL;
     [self.zoomView removeFromSuperview];
     self.zoomView = nil;
@@ -100,9 +102,11 @@
         UIImage *image = [UIImage imageWithContentsOfFile:imageURL.path];
         self.zoomView.image = image;
         resizeZoomViewFrame(image);
+        self.imageLoaded = YES;
     } else {
         [self.zoomView sd_setImageWithURL:imageURL placeholderImage:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
             resizeZoomViewFrame(image);
+            self.imageLoaded = YES;
         } usingProgressView:nil];
     }
 }

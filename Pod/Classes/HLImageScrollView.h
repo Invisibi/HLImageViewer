@@ -51,5 +51,6 @@
 
 @property (nonatomic) NSURL *imageURL;
 @property (nonatomic, readonly) UIImageView *zoomView;
+@property (nonatomic, readonly) BOOL imageLoaded;
 
 @end
